@@ -4,6 +4,8 @@ import { forwardRef } from "react";
 
 const Thumbnail = forwardRef(({ result }, ref) => {
 	const BaseURL = "https://image.tmdb.org/t/p/original";
+	//Line that matters!!!
+	Thumbnail.displayName = "Thumbnail";
 	return (
 		<div
 			ref={ref}
